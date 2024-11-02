@@ -14,11 +14,11 @@ def parse_agrs():
     parser = argparse.ArgumentParser()
 
     # Data input settings
-    parser.add_argument('--image_dir', type=str, default='data/iu_xray/images/', help='the path to the directory containing the data.')
-    parser.add_argument('--ann_path', type=str, default='data/iu_xray/annotation.json', help='the path to the directory containing the data.')
+    parser.add_argument('--image_dir', type=str, default='data/zju2/images/', help='the path to the directory containing the data.')
+    parser.add_argument('--ann_path', type=str, default='data/zju2/annotation.json', help='the path to the directory containing the data.')
 
     # Data loader settings
-    parser.add_argument('--dataset_name', type=str, default='iu_xray', choices=['iu_xray', 'mimic_cxr','zju2','aptos'], help='the dataset to be used.')
+    parser.add_argument('--dataset_name', type=str, default='zju2', choices=['iu_xray', 'mimic_cxr','zju2','aptos'], help='the dataset to be used.')
     parser.add_argument('--max_seq_length', type=int, default=60, help='the maximum sequence length of the reports.')
     parser.add_argument('--threshold', type=int, default=3, help='the cut off frequency for the words.')
     parser.add_argument('--num_workers', type=int, default=2, help='the number of workers for dataloader.')
@@ -28,7 +28,7 @@ def parse_agrs():
     parser.add_argument('--visual_extractor', type=str, default='resnet101', help='the visual extractor to be used.')
     #parser.add_argument('--visual_extractor_pretrained', type=str, default='ResNet101_Weights.DEFAULT', help='whether to load the pretrained visual extractor')
     parser.add_argument('--visual_extractor_pretrained', type=bool, default=True, help='whether to load the pretrained visual extractor')
-    parser.add_argument('--use_jieba', type=bool, default=True, help='whether to use jieba. 按词划分')
+    parser.add_argument('--use_jieba', type=bool, default=True, help='whether to use jieba.')
 
     # Model settings (for Transformer)
     parser.add_argument('--d_model', type=int, default=512, help='the dimension of Transformer.')
