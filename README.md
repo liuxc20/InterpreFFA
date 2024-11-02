@@ -15,8 +15,9 @@ Data will be made available for research purposes upon request. Data requests ar
 
 ## Run on ZJU2 dataset
 
-Run `bash train_zju2.sh` to train our model on the ZJU2 data.
-Run `bash test_zju2.sh` to test our model on the ZJU2 data.
+- Run `bash train_zju2.sh` to train our model on the ZJU2 dataset.
+  
+- Run `bash test_zju2.sh` to test our model on the ZJU2 dataset.
 
 ## Acknowledgments
 
