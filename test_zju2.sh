@@ -1,6 +1,6 @@
 python main_test.py \
---image_dir /data2/liuxiaocong/oph/RepGen-main/data/zju2/images/ \
---ann_path /data2/liuxiaocong/oph/RepGen-main/data/zju2/annotation.json \
+--image_dir /data/zju2/images/ \
+--ann_path /data/zju2/annotation.json \
 --dataset_name zju2 \
 --max_seq_length 40 \
 --use_jieba True \
