@@ -16,11 +16,11 @@ def parse_agrs():
     parser = argparse.ArgumentParser()
 
     # Data input settings
-    parser.add_argument('--image_dir', type=str, default='data/iu_xray/images/', help='the path to the directory containing the data.')
-    parser.add_argument('--ann_path', type=str, default='data/iu_xray/annotation.json', help='the path to the directory containing the data.')
+    parser.add_argument('--image_dir', type=str, default='data/zju2/images/', help='the path to the directory containing the data.')
+    parser.add_argument('--ann_path', type=str, default='data/zju2/annotation.json', help='the path to the directory containing the data.')
 
     # Data loader settings
-    parser.add_argument('--dataset_name', type=str, default='iu_xray', choices=['iu_xray', 'mimic_cxr', 'mimic_abn','zju2','aptos','eyenet'], help='the dataset to be used.')
+    parser.add_argument('--dataset_name', type=str, default='zju2', choices=['iu_xray', 'mimic_cxr', 'mimic_abn','zju2','aptos','eyenet'], help='the dataset to be used.')
     parser.add_argument('--max_seq_length', type=int, default=60, help='the maximum sequence length of the reports.')
     parser.add_argument('--threshold', type=int, default=3, help='the cut off frequency for the words.')
     parser.add_argument('--num_workers', type=int, default=2, help='the number of workers for dataloader.')
