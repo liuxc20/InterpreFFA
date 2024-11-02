@@ -17,5 +17,5 @@ python main_test.py \
 --contra_temperature 0.1 \
 --contra_embed_size 256 \
 --contra_epoch 0 \
---seed 16 \
+--seed 36 \
 --load results/zju2/model_best.pth \
