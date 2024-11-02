@@ -1,5 +1,7 @@
 # InterpreFFA
-a diagnosis-supervised contrastive learning framework named InterpreFFA to emulate the decision-making process of ophthalmologists on generating FFA reports in real-world clinical practice.
+We developed a diagnosis-supervised contrastive learning framework named InterpreFFA to emulate the decision-making process of ophthalmologists on generating FFA reports in real-world clinical practice.
+
+This is the pytorch implementation for our paper.
 
 ## Requirements
 
