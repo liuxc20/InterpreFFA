@@ -26,9 +26,9 @@ class R2DataLoader(DataLoader):
 
         elif split == 'train' and (self.dataset_name == 'zju2'or self.dataset_name == 'aptos'):
             self.transform = transforms.Compose([
-                #transforms.RandomRotation((-3,3)),#随机在（-3，3）角度间选择一个角度旋转
-                transforms.Resize((224,224)),#旋转会改变图片大小，resnet的图像输入尺寸必须是224*224
-                transforms.RandomHorizontalFlip(),#水平翻转会改变左右眼的判断
+                #transforms.RandomRotation((-3,3)),
+                transforms.Resize((224,224)),
+                transforms.RandomHorizontalFlip(),#
                 transforms.ToTensor(),
                 transforms.Normalize((0.485, 0.456, 0.406),
                                      (0.229, 0.224, 0.225))])
